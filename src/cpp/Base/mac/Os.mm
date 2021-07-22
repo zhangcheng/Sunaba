@@ -9,6 +9,8 @@
 #include <pthread.h>
 #include <wchar.h>
 
+#import <Foundation/Foundation.h>
+
 #include "Base/Os.h"
 #include "Base/Utility.h"
 
