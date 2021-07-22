@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  MacSunaba
+
+  Created by zhangcheng on 2021/7/22.
+  Copyright © 2021 library. All rights reserved.
+*/
+
+"秒間%d回表示 負荷%d％"="FPS(%d) Load(%d%%)";
+

@@ -11,6 +11,7 @@
 		1D243FBA1F1AE8A2003E220A /* Sound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D243FB91F1AE8A2003E220A /* Sound.cpp */; };
 		1D243FBC1F1AE98F003E220A /* include in Resources */ = {isa = PBXBuildFile; fileRef = 1D243FBB1F1AE98F003E220A /* include */; };
 		1D272D0725F88CFA00B1B6AB /* Os.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1D272D0625F88CFA00B1B6AB /* Os.mm */; };
+		37E754AB26A9356E0031F207 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 37E754AD26A9356E0031F207 /* Localizable.strings */; };
 		A20A6FA01835E22A00B8F7B5 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20A6F9F1835E22A00B8F7B5 /* OpenAL.framework */; };
 		A2334583182B7E2800DA7962 /* MyView.mm in Sources */ = {isa = PBXBuildFile; fileRef = A2334582182B7E2800DA7962 /* MyView.mm */; };
 		A23345C9182CD31F00DA7962 /* SunabaWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A23345C8182CD31F00DA7962 /* SunabaWrapper.mm */; };
@@ -44,6 +45,7 @@
 		1D243FB91F1AE8A2003E220A /* Sound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sound.cpp; path = mac/Sound.cpp; sourceTree = "<group>"; };
 		1D243FBB1F1AE98F003E220A /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = ../include; sourceTree = "<group>"; };
 		1D272D0625F88CFA00B1B6AB /* Os.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Os.mm; sourceTree = "<group>"; };
+		37E754AC26A9356E0031F207 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A20A6F9F1835E22A00B8F7B5 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		A2334581182B7D7300DA7962 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		A2334582182B7E2800DA7962 /* MyView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyView.mm; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		A2ABF6BF1828B3C700228181 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				37E754AD26A9356E0031F207 /* Localizable.strings */,
 				A2ABF6C41828B3C700228181 /* main.mm */,
 				A2334581182B7D7300DA7962 /* MyView.h */,
 				A2334582182B7E2800DA7962 /* MyView.mm */,
@@ -291,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2ABF6C31828B3C700228181 /* InfoPlist.strings in Resources */,
+				37E754AB26A9356E0031F207 /* Localizable.strings in Resources */,
 				A2ABF6D11828B3C700228181 /* Images.xcassets in Resources */,
 				A2ABF6C91828B3C700228181 /* Credits.rtf in Resources */,
 				1D243FBC1F1AE98F003E220A /* include in Resources */,
@@ -343,6 +347,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		37E754AD26A9356E0031F207 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37E754AC26A9356E0031F207 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		A2ABF6C11828B3C700228181 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -427,7 +439,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -480,7 +492,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};

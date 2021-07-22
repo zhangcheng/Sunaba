@@ -96,9 +96,7 @@ bool compileFromPath(
         }
     }
 
-    char statusBuf[256] = { 0 };
-    sprintf(statusBuf, "秒間%d回表示 負荷%d％", gpSystem->framePerSecond(), gpSystem->calculationTimePercent() );
-    return [NSString stringWithUTF8String: statusBuf];
+    return [NSString stringWithFormat:NSLocalizedString(@"秒間%d回表示 負荷%d％", comment: "秒間%d回表示 負荷%d％"), gpSystem->framePerSecond(), gpSystem->calculationTimePercent()];
 }
 
 - (void) terminate
