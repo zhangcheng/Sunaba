@@ -39,7 +39,7 @@ void die(const char* filename, int line, const char* message){
 	System::Diagnostics::Debug::Assert(false);
 #else
 	if (gWindowHandle){
-		MessageBoxA(gWindowHandle, s.c_str(), "致命的エラー", MB_OK | MB_ICONERROR);
+		MessageBoxA(gWindowHandle, s.c_str(), NSLocalizedString(@"致命的エラー", comment: "致命的エラー"), MB_OK | MB_ICONERROR);
 	}
 	::DebugBreak();
 #endif

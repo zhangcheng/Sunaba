@@ -8,3 +8,12 @@
 
 "秒間%d回表示 負荷%d％"="FPS(%d) Load(%d%%)";
 
+"致命的エラー"="Fatal error";
+
+"指定されたプログラムを開始できなかった。"="The specified program could not be started.";
+"同じプログラムを再起動(セーブした?)"="Restart the same program (or save it?)";
+"新たなプログラムを起動"="Start a new program";
+
+"プログラムが異常終了した。間違いがある。"="The program terminated abnormally. There is a mistake.";
+"プログラムが最後まで実行された"="The program has been executed to the end.";
+"(出力:"="(Output:";

@@ -64,13 +64,13 @@ inline bool System::bootProgram(const unsigned char* objectCode, int objectCodeS
 		objectCode,
 		objectCodeSize);
 	if (mMachine->isError()){
-		mMessageStream << L"指定されたプログラムを開始できなかった。" << std::endl;
+		mMessageStream << [NSLocalizedString(@"指定されたプログラムを開始できなかった。", comment: "指定されたプログラムを開始できなかった。") cStringUsingEncoding:NSUTF8StringEncoding] << std::endl;
 		DELETE(mMachine);
 	}else{
 		if (isSameProgram){
-			mMessageStream << L"同じプログラムを再起動(セーブした?)" << std::endl;
+			mMessageStream << [NSLocalizedString(@"同じプログラムを再起動(セーブした?)", comment: "同じプログラムを再起動(セーブした?)") cStringUsingEncoding:NSUTF8StringEncoding] << std::endl;
 		}else{
-			mMessageStream << L"新たなプログラムを起動" << std::endl;
+			mMessageStream << [NSLocalizedString(@"新たなプログラムを起動", comment: "新たなプログラムを起動") cStringUsingEncoding:NSUTF8StringEncoding] << std::endl;
 		}
 	}
 	restartGraphics();
@@ -118,12 +118,12 @@ inline void System::update(Array<unsigned char>* messageOut, int pointerX, int p
 				mTerminationMessageDrawn = true;
 				//終了メッセージ
 				if (mMachine->isError()){ //エラーなら
-					mMessageStream << L"プログラムが異常終了した。間違いがある。" << std::endl;
+					mMessageStream << [NSLocalizedString(@"プログラムが異常終了した。間違いがある。", comment: "プログラムが異常終了した。間違いがある。") cStringUsingEncoding:NSUTF8StringEncoding] << std::endl;
 				}else{
-					mMessageStream << L"プログラムが最後まで実行された";
+					mMessageStream << [NSLocalizedString(@"プログラムが最後まで実行された", comment: "プログラムが最後まで実行された") cStringUsingEncoding:NSUTF8StringEncoding];
 					int out = mMachine->outputValue();
 					if (out != 0){
-						mMessageStream << L"(出力:" << mMachine->outputValue() << L")" << std::endl;
+						mMessageStream << [NSLocalizedString(@"(出力:", comment: "(出力:") cStringUsingEncoding:NSUTF8StringEncoding] << mMachine->outputValue() << L")" << std::endl;
 					}else{
 						mMessageStream << L"。" << std::endl;
 					}

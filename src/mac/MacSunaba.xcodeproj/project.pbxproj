@@ -45,6 +45,7 @@
 		1D243FB91F1AE8A2003E220A /* Sound.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Sound.cpp; path = mac/Sound.cpp; sourceTree = "<group>"; };
 		1D243FBB1F1AE98F003E220A /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = ../include; sourceTree = "<group>"; };
 		1D272D0625F88CFA00B1B6AB /* Os.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Os.mm; sourceTree = "<group>"; };
+		37C05E7226A9D7FF008933FE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		37E754AC26A9356E0031F207 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A20A6F9F1835E22A00B8F7B5 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		A2334581182B7D7300DA7962 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
@@ -375,6 +376,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				A2ABF6CE1828B3C700228181 /* Base */,
+				37C05E7226A9D7FF008933FE /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
